@@ -1,7 +1,7 @@
 import Web3 from "web3";
 import ProviderEngine from "web3-provider-engine";
 import SubscriptionSubprovider from "web3-provider-engine/subproviders/subscriptions";
-import TransportU2F from "@ledgerhq/hw-transport-webusb";
+import TransportU2F from "@ledgerhq/hw-transport-u2f";
 import createLedgerSubprovider from "@ledgerhq/web3-subprovider";
 import WebsocketSubProvider from "web3-provider-engine/subproviders/websocket";
 import { NETWORK_TYPES, INFURA_PROJECT_ID } from "../../config";
