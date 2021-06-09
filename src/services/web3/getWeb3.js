@@ -23,7 +23,7 @@ async function loadWeb3Ledger(mainnet = true) {
   const getTransport = () => TransportU2F.create();
   const ledger = createLedgerSubprovider(getTransport, {
     networkId,
-    accountsLength: 5,
+    accountsLength: 5
   });
   engine.addProvider(ledger);
   const fetchProvider = new WebsocketSubProvider({ rpcUrl });
@@ -58,8 +58,8 @@ async function loadWeb3Mock() {
   return {
     eth: {
       currentProvider: {},
-      getAccounts: () => [],
-    },
+      getAccounts: () => []
+    }
   };
 }
 
@@ -115,7 +115,7 @@ export function setNewWeb3(t) {
 
 export function getCurrentWeb3(t) {
   if (web3Instance) {
-    return new Promise((resolve) => {
+    return new Promise(resolve => {
       resolve(web3Instance);
     });
   }
