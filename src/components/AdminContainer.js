@@ -44,6 +44,11 @@ const baseStyle = (
       .click-to-refresh {
         transform: rotateZ(0deg);
         transition: transform 1.5s ease-in;
+
+        svg {
+          width: 16px;
+          vertical-align: middle;
+        }
       }
       .click-to-refresh:hover {
         color: ${brandDarkOrange};
